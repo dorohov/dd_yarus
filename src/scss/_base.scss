@@ -1,0 +1,37 @@
+.__dd {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img,
+    svg {
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
