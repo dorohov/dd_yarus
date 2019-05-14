@@ -1,0 +1,143 @@
+.__dd__container {
+    max-width: #{1620px + 60px};
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+.__dd__heading {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+    &set {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 60px;
+        &__desc {
+            max-width: 650px;
+            width: 100%;
+            padding-left: 20px;
+            margin-left: auto;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 19px;
+        }
+        .__dd__heading {
+            margin-bottom: 0;
+        }
+        &.__dd__is--white {
+            .__dd__is--white,
+            .__dd__headingset__desc {
+                color: #fff;
+            }
+        }
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            &__desc {
+                max-width: 100%;
+                padding-left: 0;
+                padding-top: 20px;
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    &.__dd__is--black {
+        color: #2B2B2B;
+    }
+    &.__dd__is--white {
+        color: #fff;
+    }
+    &.__dd__is-mb0 {
+        margin-bottom: 0;
+    }
+    @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.__dd__slide {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    @media (max-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+$dark-bg-color: #242222;
+
+.__dd__bg-dark {
+    background: $dark-bg-color;
+}
+
+.__dd__btn {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    line-height: 19px;
+    font-size: 18px;
+    padding: 22px 45px;
+    position: relative;
+    transition: .40s all ease;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    text-align: center;
+    white-space: nowrap;
+    span {
+        position: relative;
+        z-index: 100;
+    }
+    &::after {
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .40s all ease;
+    }
+    &.is--default {
+        border-color: $dark-bg-color;
+        color: $dark-bg-color;
+        &::after {
+            width: 0;
+            background: $dark-bg-color;
+        }
+        &:hover {
+            color: #fff;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+    &.is--inverted {
+        border-color: #fff;
+        color: $dark-bg-color;
+        &::after {
+            width: 100%;
+            background: #fff;
+        }
+        &:hover {
+            color: #fff;
+            &::after {
+                width: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 15px 20px;
+    }
+}
