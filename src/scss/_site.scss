@@ -1,6 +1,14 @@
 $text: #2B2B2B;
 
+.__dd__anim {
+    opacity: 0;
+    &.__dd__is--show {
+        opacity: 1;
+    }
+}
+
 .__dd {
+    overflow: hidden;
     &__banner {
         background: $bg-dark;
         position: relative;
@@ -90,7 +98,7 @@ $text: #2B2B2B;
                         margin-bottom: 15px;
                     }
                     &__desc {
-                        max-width: 370px;
+                        max-width: 420px;
                         width: 100%;
                         font-weight: 300;
                         font-size: 18px;
@@ -121,6 +129,68 @@ $text: #2B2B2B;
                 }
             }
         }
+        &-four {
+            background: #F3F3F3;
+        }
+        &-five {
+            background: #1C1C1C;
+            &__inner {
+                padding-bottom: 300px;
+            }
+            &__phones {
+                &__inner {
+                    height: 500px;
+                }
+                &__blocks {
+                    margin: 0 -55px;
+                    display: flex;
+                    transform: translateY(-50%);
+                }
+                &__block {
+                    padding: 0 55px;
+                    overflow: hidden;
+                    &.is--b2 {
+                        img {
+                            padding-top: 190px;
+                        }
+                    }
+                    &.is--b3 {
+                        img {
+                            padding-top: 115px;
+                        }
+                    }
+                    &.is--b3 {
+                        img {
+                            padding-top: 55px;
+                        }
+                    }
+                }
+            }
+        }
+        &-six {
+            background-image: url(../../img/bg2.png);
+            background-repeat: no-repeat;
+            background-position: -20% 38%;
+            background-size: 40%;
+        }
+        &-eight {
+            background: linear-gradient(270.89deg, #E2E2E2 1.46%, #F0F0F0 53.66%, #E0E0E0 99.66%), #C4C4C4;
+            &__top {
+                text-align: center;
+                margin-bottom: 30px;
+                .__dd__heading {
+                    margin-bottom: 0;
+                    padding: 60px 0;
+                }
+            }
+            &__mockup {
+                text-align: center;
+                img {
+                    max-width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
     }
     &__img {
         text-align: center;
@@ -128,6 +198,23 @@ $text: #2B2B2B;
             max-width: 1200px;
             width: 100%;
             margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .__dd {
+        &__block {
+            &-five {
+                &__phones {
+                    &__block {
+                        padding: 0 35px;
+                    }
+                    &__blocks {
+                        margin: 0 -35px;
+                    }
+                }
+            }
         }
     }
 }
@@ -143,6 +230,21 @@ $text: #2B2B2B;
             }
             &__mockup {
                 padding-left: 480px;
+            }
+        }
+        &__block {
+            &-five {
+                &__phones {
+                    &__inner {
+                        height: 290px;
+                    }
+                    &__blocks {
+                        margin: 0 -20px;
+                    }
+                    &__block {
+                        padding: 0 20px;
+                    }
+                }
             }
         }
     }
@@ -187,6 +289,9 @@ $text: #2B2B2B;
                     font-size: 26px;
                     line-height: 28px;
                     margin-bottom: 30px;
+                    br {
+                        display: none;
+                    }
                 }
             }
         }
@@ -198,6 +303,23 @@ $text: #2B2B2B;
                         margin-bottom: 30px;
                         &:last-child {
                             margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &-five {
+                &__phones {
+                    &__block {
+                        &.is--b1,
+                        &.is--b3,
+                        &.is--b4 {
+                            display: none;
+                        }
+                        img {
+                            padding-top: 0 !important;
+                        }
+                        &.is--b2 {
+                            margin: 0 auto 50px auto;
                         }
                     }
                 }

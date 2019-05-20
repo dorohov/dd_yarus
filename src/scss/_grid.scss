@@ -17,13 +17,14 @@
         align-items: flex-end;
         margin-bottom: 60px;
         &__desc {
-            max-width: 650px;
+            max-width: 750px;
             width: 100%;
             padding-left: 20px;
             margin-left: auto;
             font-size: 18px;
             font-weight: 300;
             line-height: 19px;
+            padding-bottom: 10px;
         }
         .__dd__heading {
             margin-bottom: 0;
@@ -135,7 +136,7 @@ $dark-bg-color: #242222;
 }
 
 @media (max-width: 768px) {
-    .btn {
+    .__dd__btn {
         font-size: 16px;
         line-height: 18px;
         padding: 15px 20px;
