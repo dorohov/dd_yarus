@@ -114,6 +114,16 @@ $text: #2B2B2B;
             background-position: 120% -100px;
             background-size: 55%;
             &__ba {
+                &.animated {
+                    .__dd__block-two__ba__block {
+                        div {
+                            animation: cocoen1 2s infinite ease-in-out;
+                        }
+                        .cocoen-drag {
+                            animation: cocoen2 2s infinite ease-in-out;
+                        }
+                    }
+                }
                 &__inner {
                     overflow: hidden;
                     padding: 13px 0;
