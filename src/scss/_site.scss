@@ -185,6 +185,7 @@ $text: #2B2B2B;
         }
         &-eight {
             background: linear-gradient(270.89deg, #E2E2E2 1.46%, #F0F0F0 53.66%, #E0E0E0 99.66%), #C4C4C4;
+            padding-top: 30px;
             &__top {
                 text-align: center;
                 margin-bottom: 30px;
@@ -333,6 +334,9 @@ $text: #2B2B2B;
                         }
                     }
                 }
+            }
+            &-eight {
+                padding-top: 0;
             }
         }
     }
