@@ -4,6 +4,12 @@
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+    a {
+        color: #b38144;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .__dd__heading {
@@ -114,6 +120,7 @@ $dark-bg-color: #242222;
         }
         &:hover {
             color: #fff;
+            text-decoration: none;
             &::after {
                 width: 100%;
             }
@@ -128,6 +135,7 @@ $dark-bg-color: #242222;
         }
         &:hover {
             color: #fff;
+            text-decoration: none;
             &::after {
                 width: 0;
             }

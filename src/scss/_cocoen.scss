@@ -7,27 +7,43 @@
         left: 0;
         overflow: hidden;
         width: 50%;
+        // &::before,
+        // &::after {
+        //     border: 2px solid #fff;
+        //     width: 13px;
+        //     height: 13px;
+        //     border-radius: 100%;
+        //     content: '';
+        //     margin: 0 0 0 -6px;
+        //     display: block;
+        //     position: absolute;
+        //     right: -7px;
+        // }
+        // &::before {
+        //     bottom: 97%;
+        //     top: auto;
+        // }
+        // &::after {
+        //     bottom: auto;
+        //     top: 97%;
+        // }
     }
 }
 
 .cocoen-drag {
-    &::before,
-    &::after {
-        border: 2px solid #fff;
-        width: 13px;
-        height: 13px;
-        border-radius: 100%;
-        content: '';
-        margin: 0 0 0 -6px;
-        display: block;
-        position: absolute;
-    }
+    background: transparent;
     &::before {
-        bottom: 100%;
-        top: auto;
+        width: 47px;
+        height: 47px;
+        border: none;
+        margin-left: -24px;
+        background: url(../../img/slider.png);
+        opacity: .7;
+        transition: .25s all ease;
     }
-    &::after {
-        bottom: auto;
-        top: 100%;
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
     }
 }

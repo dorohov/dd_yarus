@@ -7,19 +7,6 @@
             startAnimation()
         })
 
-        $('.__dd__block-two__ba__block').hover(function() {
-            $(this).removeClass('animated')
-            .removeClass('__dd__is--show')
-            .removeClass('bounce')
-            .css({
-                opacity: 1
-            })
-        }, function() {
-            $(this).addClass('animated')
-            .addClass('__dd__is--show')
-            .addClass('bounce')
-        })
-
         function startAnimation() {
             var animation_element = $('.__dd__anim')
 
